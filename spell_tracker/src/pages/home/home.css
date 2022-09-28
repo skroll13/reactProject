@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: 'Inter Tight', sans-serif;
+    background-color: lightgrey;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #001f3f;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
