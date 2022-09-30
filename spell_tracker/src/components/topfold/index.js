@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './topfold.css'
 
 const TopFold = () => {
@@ -18,10 +19,11 @@ const TopFold = () => {
           onChange={(e)=>handleQuery(e)} 
           />
         </div>
+       <Link to='/add-spell'>
         <div className='add-button'>
-          <label>Add</label>
-
+            <label>Add</label>
         </div>
+       </Link>
       </div>:(
         <div className='add-topfold'>
           <div className='add-topfold-button'>
