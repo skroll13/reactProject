@@ -1,11 +1,13 @@
 import React from 'react'
+import SpellsList from '../../components/spellsList';
+import TopFold from '../../components/topfold';
 import './home.css'
 
 const Home = () => {
   return (
     <div className='home'>
-        <div>topfold</div>
-        <div>SpellsList</div>
+        <TopFold />
+        <SpellsList />
     </div>
   );
 };
