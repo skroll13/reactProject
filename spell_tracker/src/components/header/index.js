@@ -15,7 +15,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 >
 
-            <button class="devicon-github-original"></button>
+            <button className="devicon-github-original"></button>
           
                 </a>
             </div>

@@ -5,7 +5,7 @@ import { addSpell } from '../../redux/actions/spells'
 import './add-form.css'
 
 const AddForm = () => {
-    const categories = categories
+    const cat = categories
     const [categoryOpen, setCategoryOpen] = useState(false)
     const [title, setTitle]= useState("")
     const [description, setDescription] = useState("")
@@ -50,7 +50,7 @@ const AddForm = () => {
                     </div>
                         {categoryOpen && (
                             <div className='category-container'>
-                                {categories.map(category=>(
+                                {cat.map(category=>(
                                     <div 
                                     className='cateogry-item' 
                                     style={{borderRight:`5px solid ${category.color}`}} 

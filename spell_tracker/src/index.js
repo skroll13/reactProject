@@ -1,16 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Provider } from 'react-redux'
+// import { Provider } from 'react-redux'
 import App from './App'
-// import createStore from './createReduxStore'
+// import {createStore} from 'redux'
+// import {spellReducer} from './redux/reducers/spells'
 
-// const store = createStore()
+// const store = createStore(spellReducer)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <Provider store={store}>
-  <Provider>
     <App />
-  </Provider>
 );
 

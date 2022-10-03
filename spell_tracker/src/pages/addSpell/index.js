@@ -5,6 +5,7 @@ import './addSpell.css'
 const AddSpell = () => {
   return (
     <div className='add-spell'>
+      "test text"
         <TopFold />
     </div>
   )

@@ -6,6 +6,7 @@ import './home.css'
 const Home = () => {
   return (
     <div className='home'>
+      "HOME text test ***"
         <TopFold />
         <SpellsList />
     </div>

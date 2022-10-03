@@ -1,21 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import Card from './card'
 import './spellsList.css'
 
 const SpellsList = () => {
-  const {spellsList: list, query} = useSelector((state) => state.expenses)
-  const filteredList = list.filter(item=> item.title.includes(query))
-  console.log(spells)
-  return (
+  const {spellsList: list, query} = useSelector((state) => state.spells)
+  const filteredList = list.filter((item)=> item.title.includes(query));
+  console.log("test text - SpellsList ***")
+  return ( 
     <div className='spells-list'>
       {filteredList.length ? (
         filteredList.map((item) => <Card item = {item} />)) : (
         <div className='empty-state'>
-          <img src='https://image.shutterstock.com/image-illustration/empty-old-magic-book-your-600w-68828275.jpg' alt='image of an open book, nothing on the pages' className='empty-image' />
+          <img src='https://image.shutterstock.com/image-illustration/empty-old-magic-book-your-600w-68828275.jpg' alt='open book, nothing on the pages' className='empty-image' />
           <label>Your Spell List is Empty</label>
         </div>)} 
-       
     </div>
   )
 }

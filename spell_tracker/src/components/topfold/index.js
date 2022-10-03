@@ -11,7 +11,7 @@ const TopFold = () => {
     setQuery(e.target.value)
     dispatch(searchSpell(e.target.value))
   }
-  return (
+  return ( 
     <div className='topfold'>
       {window.location.pathname === '/' ? <div className='home-topfold'>
         <div className='search-bar'>

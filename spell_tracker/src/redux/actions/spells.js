@@ -11,7 +11,7 @@ export const addSpell=(data)=>{
 export const deleteSpell = (data) => {
     return {
         type: DELETE_SPELL,
-        data
+        data,
     }
 }
 
