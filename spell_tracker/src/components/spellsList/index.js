@@ -10,12 +10,11 @@ const SpellsList = () => {
   return (
     <div className='spells-list'>
       {filteredList.length ? (
-        filteredList.map((item) => <Card item = {item} />)
-      ) : (
+        filteredList.map((item) => <Card item = {item} />)) : (
         <div className='empty-state'>
           <img src='https://image.shutterstock.com/image-illustration/empty-old-magic-book-your-600w-68828275.jpg' alt='image of an open book, nothing on the pages' className='empty-image' />
           <label>Your Spell List is Empty</label>
-        </div>} 
+        </div>)} 
        
     </div>
   )

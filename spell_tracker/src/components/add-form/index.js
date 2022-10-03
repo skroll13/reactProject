@@ -40,28 +40,30 @@ const AddForm = () => {
         </div>
         <div className='form-item'>
             <label>description</label>
-            <input value={description} placeholder="enter description" className="description-input" onChange={(e)=>handleDescription(e)} ></input>
+            <input value={ description } placeholder="enter description" className="description-input" onChange={(e)=>handleDescription(e)} ></input>
         </div>
         <div className='category-container-parent'>
             <div className='category'>
                 <div className='category-dropdown' onClick={()=>setCategory(!categoryOpen)}>
                     <div>
-                        <label>{category?category.title:'Category'}</label>
+                        <label>{category ? category.title:'Category'}</label>
                     </div>
-                    {categoryOpen && <div className='category-container'>
-                        {categories.map(category=>(
-                            <div 
-                            className='cateogry-item' 
-                            style={{borderRight:`5px solid ${category.color}`}} 
-                            key={category.id} 
-                            onClick={()=>handleCategory(category)}
-                            >
-                            <label> {category.title} </label>
-                            <img src={category.icon.default} alt={category.title}/>
-                            ))}
-                            </div>}
-                    </div>
-             </div>
+                        {categoryOpen && (
+                            <div className='category-container'>
+                                {categories.map(category=>(
+                                    <div 
+                                    className='cateogry-item' 
+                                    style={{borderRight:`5px solid ${category.color}`}} 
+                                    key={category.id} 
+                                    onClick={()=>handleCategory(category)}
+                                    >
+                                    <label> {category.title} </label>
+                                    <img src={category.icon.default} alt={category.title}/>
+                                    </div> 
+                                ))}
+                            </div>
+                        )}
+               </div>
             </div>
         </div>
         <div className='form-add-button'>
